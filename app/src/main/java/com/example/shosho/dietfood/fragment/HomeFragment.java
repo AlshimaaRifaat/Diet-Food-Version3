@@ -1,6 +1,7 @@
 package com.example.shosho.dietfood.fragment;
 
 
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -77,6 +78,8 @@ View view;
                         View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
         init();
+
+
         homeBannerPresenter=new HomeBannerPresenter(getContext(),this);
         Banner();
         networkConnection=new NetworkConnection( getContext() );

@@ -1,7 +1,9 @@
 package com.example.shosho.dietfood.fragment;
 
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -21,6 +23,7 @@ import com.example.shosho.dietfood.NetworkConnection;
 import com.example.shosho.dietfood.R;
 import com.example.shosho.dietfood.SplashActivity;
 import com.example.shosho.dietfood.activity.HomeActivity;
+import com.example.shosho.dietfood.activity.LoginActivity;
 import com.example.shosho.dietfood.adapter.CardAdapter;
 import com.example.shosho.dietfood.model.AddToCardData;
 import com.example.shosho.dietfood.model.CardData;
@@ -100,7 +103,9 @@ public class CardFragment extends Fragment implements CardView ,AddToCardView
                goToPostOrderPage();
            }
        });
-       swipRefresh();
+
+
+        swipRefresh();
         return view;
     }
 
@@ -140,24 +145,24 @@ public class CardFragment extends Fragment implements CardView ,AddToCardView
             TotalPrice += cardDataList.get( i ).getTotalPrice() ;
         }
         textTotalPrice.setText(String.valueOf(  TotalPrice)  );*/
+           TabLayout.Tab tab = HomeActivity.tabLayout.getTabAt(1); // fourth tab
+           View tabView = tab.getCustomView();
+           TextView textView = tabView.findViewById(R.id.cart_notification);
+           textView.setVisibility(View.VISIBLE);
+           textView.setText(cardDataList.size() + "");
 
-        TabLayout.Tab tab = HomeActivity.tabLayout.getTabAt(1); // fourth tab
-        View tabView = tab.getCustomView();
-        TextView textView = tabView.findViewById(R.id.cart_notification);
-        textView.setVisibility(View.VISIBLE);
-        textView.setText(cardDataList.size()+"");
 
+           cardAdapter = new CardAdapter(getContext(), cardDataList);
+           cardAdapter.onClick((DetailsCardView) this);
+           cardAdapter.onClick((OnClickMinCardView) this);
+           cardAdapter.onClick((OnDeleteIconClickView) this);
+           LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+           recyclerViewCard.setLayoutManager(linearLayoutManager);
+           recyclerViewCard.setAdapter(cardAdapter);
+           totalPricerelativeLayout.setVisibility(View.VISIBLE);
+           paymentBtn.setVisibility(View.VISIBLE);
+           swipeRefreshLayout.setRefreshing(false);
 
-        cardAdapter=new CardAdapter( getContext(),cardDataList );
-        cardAdapter.onClick( (DetailsCardView)this );
-        cardAdapter.onClick( (OnClickMinCardView) this );
-        cardAdapter.onClick( (OnDeleteIconClickView) this );
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        recyclerViewCard.setLayoutManager(linearLayoutManager);
-        recyclerViewCard.setAdapter( cardAdapter );
-        totalPricerelativeLayout.setVisibility(View.VISIBLE);
-        paymentBtn.setVisibility(View.VISIBLE);
-        swipeRefreshLayout.setRefreshing( false );
 
     }
 
