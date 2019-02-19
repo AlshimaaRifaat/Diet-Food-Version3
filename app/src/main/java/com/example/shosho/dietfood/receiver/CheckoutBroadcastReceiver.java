@@ -20,12 +20,14 @@ public class CheckoutBroadcastReceiver extends BroadcastReceiver {
         if (CheckoutActivity.ACTION_ON_BEFORE_SUBMIT.equals(action)) {
             String paymentBrand = intent.getStringExtra(CheckoutActivity.EXTRA_PAYMENT_BRAND);
             String checkoutId = intent.getStringExtra(CheckoutActivity.EXTRA_CHECKOUT_ID);
-
             ComponentName senderComponentName = intent.getParcelableExtra(
                     CheckoutActivity.EXTRA_SENDER_COMPONENT_NAME);
 
-            /* This callback can be used to request a new checkout ID if selected payment brand requires
-               some specific parameters or just send back the same checkout id to continue checkout process */
+            /* This callback can be used to request a new checkout ID
+            if selected payment brand requires
+               some specific parameters or
+                just send back the same checkout id to continue checkout process */
+
             intent = new Intent(CheckoutActivity.ACTION_ON_BEFORE_SUBMIT);
             intent.setComponent(senderComponentName);
             intent.setPackage(senderComponentName.getPackageName());

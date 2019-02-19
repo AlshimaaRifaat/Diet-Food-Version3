@@ -146,7 +146,6 @@ public class BasePaymentActivity extends BaseActivity
 
         if ("OK".equals(paymentStatus)) {
             showAlertDialog(R.string.message_successful_payment);
-
             return;
         }
 
