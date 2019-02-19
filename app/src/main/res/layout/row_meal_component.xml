@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/row_meal_component_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_alignParentRight="true"
+        android:text="الاسم"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        />
+    <TextView
+        android:id="@+id/row_meal_component_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row_meal_component_name"
+        android:text="الكميه"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/row_meal_component_quantity"
+        android:background="#e1dfdf"
+        android:layout_marginTop="@dimen/_9sdp"
+        />
+</RelativeLayout>

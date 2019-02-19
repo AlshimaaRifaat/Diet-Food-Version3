@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragment.PostOrderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/post_order_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="#04954c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- <ImageView
+                 android:id="@+id/category_item_image_back"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/back_white"/>-->
+            <TextView
+                android:id="@+id/post_order_text_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:textColor="#fff"
+                android:text="اضافة طلب"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+        <ImageView
+            android:id="@+id/post_order_image"
+            android:layout_below="@+id/post_order_toolbar"
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_84sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:background="@drawable/logo"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_order_image"
+            android:layout_marginTop="@dimen/_32sdp"
+            >
+            <ImageView
+                android:id="@+id/post_order_icon_phone"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/telephone"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_layout_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/post_order_icon_phone"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:hint="رقم الجوال" >
+
+                <EditText
+                    android:id="@+id/post_order_edit_text_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:inputType="text"
+                    android:textColor="#706e6f"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_address"
+            android:layout_below="@+id/relative_phone"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            >
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/facebook_placeholder"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/post_order_icon_address"
+                android:layout_centerVertical="true"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/post_order_icon_address"
+                android:hint="العنوان"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                >
+
+                <EditText
+                    android:id="@+id/post_order_edit_text_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#706e6f"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/post_order_btn_asign_location"
+            android:layout_width="@dimen/_97sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/button_login"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:text="تحديد موقعى"
+            android:layout_marginBottom="@dimen/_32sdp"
+            android:layout_below="@id/relative_address"
+            />
+
+        <Button
+            android:id="@+id/post_order_btn_add_order"
+            android:layout_width="@dimen/_97sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/button_login"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:text="طلب"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_below="@id/post_order_btn_asign_location"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:id="@+id/profile_frame_container"
+    tools:context=".fragment.ProfileFragment">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/profile_swip_refresh">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/profile_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:background="#04954c">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/notifications_button"
+                    android:layout_alignParentLeft="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_tool_bar">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_104sdp"
+        android:layout_height="@dimen/_104sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:civ_border_width="@dimen/_2sdp"
+        app:civ_border_color="#cdcdcd"
+        android:background="@drawable/profile_img"
+
+        />
+        <TextView
+            android:id="@+id/profile_text_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="تغيير كلمة المرور"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="#5f6c74"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_94sdp"
+            />
+<TextView
+    android:id="@+id/profile_text_edit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="تعديل"
+    android:textSize="@dimen/_11sdp"
+    android:textColor="#5f6c74"
+    android:layout_marginRight="@dimen/_16sdp"
+    android:layout_marginTop="@dimen/_94sdp"
+    />
+        <EditText
+            android:id="@+id/profile_edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_below="@id/profile_text_edit"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:background="@drawable/relative_card"
+            android:textColorHint="#5f6c74"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:textSize="@dimen/_13sdp"/>
+
+        <EditText
+            android:id="@+id/profile_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_below="@id/profile_edit_text_name"
+            android:layout_margin="@dimen/_14sdp"
+            android:background="@drawable/relative_card"
+            android:textColorHint="#5f6c74"
+            android:paddingStart="@dimen/_12sdp"
+            android:textSize="@dimen/_13sdp"
+            android:paddingEnd="@dimen/_12sdp"
+
+            />
+        <EditText
+            android:id="@+id/profile_edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_below="@id/profile_edit_text_email"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:background="@drawable/relative_card"
+            android:textColorHint="#5f6c74"
+            android:paddingStart="@dimen/_12sdp"
+            android:textSize="@dimen/_13sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            />
+
+        <EditText
+            android:id="@+id/profile_edit_text_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_below="@id/profile_edit_text_phone"
+            android:layout_margin="@dimen/_14sdp"
+            android:background="@drawable/relative_card"
+            android:textColorHint="#5f6c74"
+            android:paddingStart="@dimen/_12sdp"
+            android:textSize="@dimen/_13sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_14sdp"
+    android:layout_marginRight="@dimen/_14sdp"
+    android:layout_below="@+id/profile_edit_text_address">
+        <RelativeLayout
+            android:id="@+id/profile_edit_text_subscribtions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:background="@drawable/relative_card"
+            android:textColorHint="#5f6c74"
+            android:paddingStart="@dimen/_12sdp"
+            android:textSize="@dimen/_13sdp"
+            android:paddingEnd="@dimen/_12sdp"
+
+
+            />
+    <TextView
+        android:id="@+id/profile_text_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اشتراكاتي"
+        android:paddingRight="@dimen/_12sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:layout_alignParentRight="true"
+        android:textColor="#5f6c74"/>
+    <TextView
+        android:id="@+id/profile_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عرض"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:textColor="#5f6c74"/>
+    <Button
+        android:id="@+id/profile_btn_save_edit"
+        android:visibility="gone"
+        android:text="حفظ التعديل"
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/button_login"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#fff"
+        android:layout_below="@id/profile_edit_text_subscribtions"
+        android:layout_marginBottom="@dimen/_12sdp"/>
+
+</RelativeLayout>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

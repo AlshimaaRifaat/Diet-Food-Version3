@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginLeft="@dimen/_4sdp"
+    android:layout_marginRight="@dimen/_4sdp"
+    android:background="#fff">
+
+
+    <ImageView
+        android:id="@+id/row_card_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:scaleType="fitXY"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_43sdp"
+        android:background="#FF4B5157"
+        android:alpha=".7"
+        android:layout_marginTop="@dimen/_88sdp">
+
+
+
+        <TextView
+            android:id="@+id/row_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سلطه خضراء"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:textColor="#fff"
+            android:textSize="@dimen/_12sdp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/row_card_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_card_name"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:text="50 dollar"
+            android:gravity="end"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/row_card_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/group128"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:id="@+id/row_card_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_18sdp"
+            android:layout_toRightOf="@id/row_card_minus"
+            android:layout_marginLeft="@dimen/_12sdp"
+
+            />
+        <ImageView
+            android:id="@+id/row_card_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group138"
+            android:layout_toRightOf="@id/row_card_quantity"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            />
+        <ImageView
+            android:id="@+id/row_card_icon_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forma1"
+            android:layout_toRightOf="@+id/row_card_plus"
+            android:layout_marginLeft="@dimen/_26sdp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    </RelativeLayout>

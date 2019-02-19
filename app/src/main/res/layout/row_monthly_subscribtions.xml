@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<ImageView
+        android:id="@+id/row_monthly_subscribe_image1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_136sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="#a99d9d"
+        android:src="@drawable/business"
+        android:layout_alignParentLeft="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_136sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:alpha=".8"
+        android:background="#FF4B5157">
+
+        <TextView
+            android:id="@+id/row_monthly_subscribe_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="تضخيم"
+            android:textColor="#fff"
+            android:textSize="@dimen/_26sdp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/row_monthly_subscribe_image2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_136sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="#a99d9d"
+        android:src="@drawable/business"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/row_monthly_subscribe_image1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_136sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:alpha=".8"
+        android:background="#FF4B5157"
+        android:layout_below="@+id/row_monthly_subscribe_image1">
+
+        <TextView
+            android:id="@+id/row_monthly_subscribe_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="تخسيس"
+            android:textColor="#fff"
+            android:textSize="@dimen/_26sdp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+    </RelativeLayout>-->
+</RelativeLayout>

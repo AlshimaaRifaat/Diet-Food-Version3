@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragment.PaidConsultationFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/paid_consult_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="#04954c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+           <!-- <ImageView
+                android:id="@+id/paid_consult_image_favrite_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/favorite_heart_button"
+                />-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notifications_button"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/login_text_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:textColor="#fff"
+                android:text="استشارة مدفوعة"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relative_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paid_consult_tool_bar"
+        android:layout_marginTop="@dimen/_54sdp"
+
+
+        >
+        <ImageView
+            android:id="@+id/paid_consult_icon_name"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/group170"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/paid_consult_icon_name"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:hint="الاسم" >
+
+            <EditText
+                android:id="@+id/paid_consult_edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_10sdp"
+                android:inputType="text"
+                android:textColor="#706e6f"/>
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_name"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        >
+        <ImageView
+            android:id="@+id/paid_consult_icon_phone"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/telephone"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/paid_consult_icon_phone"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:hint="رقم الجوال" >
+
+            <EditText
+                android:id="@+id/paid_consult_edit_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_10sdp"
+                android:inputType="text"
+                android:textColor="#706e6f"/>
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_email"
+        android:layout_below="@+id/relative_phone"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        >
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/union155"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/paid_consult_icon_email"
+            android:layout_centerVertical="true"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/paid_consult_icon_email"
+            android:hint="البريد الالكترونى"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            >
+
+            <EditText
+                android:id="@+id/paid_consult_edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#706e6f"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_msg"
+        android:layout_below="@+id/relative_email"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_layout_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:hint="الرسالة"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            >
+
+            <EditText
+                android:id="@+id/paid_consult_edit_text_msg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:inputType="text"
+                android:textColor="#706e6f"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/paid_consult_text_plz_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_msg"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="يرجى العلم ان ثمن الاستشاره هو 120 ريال"
+        android:layout_marginLeft="@dimen/_13sdp"
+        android:layout_marginRight="@dimen/_13sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="#706e6f"/>
+
+    <Button
+        android:id="@+id/paid_consult_btn_send"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/button_login"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#fff"
+        android:text="ارسال"
+        android:textAllCaps="true"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:layout_below="@id/paid_consult_text_plz_remind"
+
+        />
+    </RelativeLayout>
+

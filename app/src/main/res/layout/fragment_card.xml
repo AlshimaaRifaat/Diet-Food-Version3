@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/card_frame_container"
+    tools:context=".fragment.CardFragment">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card_swip_refresh"
+        tools:context=".fragment.HomeFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/card_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="#04954c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- <ImageView
+                 android:id="@+id/home_image_favrite_heart"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:background="@drawable/favorite_heart_button"
+                 />-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/notifications_button"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السله"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!-- TODO: Update blank fragment layout -->
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/card_recycler"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_250sdp"
+       android:layout_margin="@dimen/_4sdp"
+       android:layout_below="@+id/card_tool_bar"
+       ></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/card_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_47sdp"
+        android:layout_below="@+id/card_recycler"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/relative_card"
+        android:visibility="visible"
+        android:layout_margin="@dimen/_4sdp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="السعر الكلي"
+            android:textSize="@dimen/_12sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/card_text_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_7sdp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/card_btn_payment"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/button_login"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:text="الدفع"
+        android:textAllCaps="true"
+        android:layout_below="@id/card_relative"
+        android:layout_marginBottom="@dimen/_32sdp"
+        />
+</RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

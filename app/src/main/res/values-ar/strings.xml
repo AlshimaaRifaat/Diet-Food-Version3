@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ForgotPassword">هل نسيت الرقم السري؟</string>
+    <string name="Do_not_have_an_account">لا تملك حساب الكترونى؟</string>
+    <string name="Register">خروج</string>
+    <string name="Login">دخول</string>
+    <string name="SignUp">خروج</string>
+    <string name="FullName">الاسم بالكامل</string>
+    <string name="Phone">رقم الجوال</string>
+    <string name="Email">البريد الالكترونى</string>
+    <string name="Address">العنوان</string>
+</resources>

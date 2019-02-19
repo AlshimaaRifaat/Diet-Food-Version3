@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragment.DetailsProducerFamilyFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/details_prod_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="#04954c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notifications_button"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تفاصيل"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/details_prod_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_135sdp"
+        android:layout_below="@+id/details_prod_tool_bar"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:scaleType="fitXY">
+    </ImageView>
+
+
+
+    <TextView
+        android:id="@+id/details_prod_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_prod_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_9sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="#888888"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/details_prod_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_prod_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:textColor="#888888"
+        android:textSize="@dimen/_14sdp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/details_prod_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_prod_price"
+        android:layout_margin="@dimen/_2sdp"
+        ></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/details_prod_btn_add_card"
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/button_login"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#fff"
+        android:layout_below="@id/details_prod_recycler"
+        android:text="أضف الي السلة"
+        />
+
+</RelativeLayout>
+</ScrollView>

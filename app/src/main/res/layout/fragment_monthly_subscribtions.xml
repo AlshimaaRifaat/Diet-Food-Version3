@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    tools:context=".fragment.MonthlySubscribtionsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/monthly_subscribtion_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="#04954c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- <ImageView
+                 android:id="@+id/home_image_favrite_heart"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:background="@drawable/favorite_heart_button"
+                 />-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/notifications_button"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الاشتراكات الشهرية"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!-- TODO: Update blank fragment layout -->
+   <!-- <RelativeLayout
+        android:id="@+id/monthly_subscribe_relative_bouquet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_19sdp"
+        android:background="@drawable/relative_bouquet_subscribe"
+        android:layout_margin="@dimen/_4sdp">
+       &lt;!&ndash; <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:text="أنت مشترك فى باقة تضخيم"
+            android:paddingRight="@dimen/_1sdp"
+           android:paddingTop="@dimen/_1sdp"
+            android:textColor="#605e5e"
+            android:textStyle="bold"
+            />&ndash;&gt;
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عرض؟"
+            android:paddingLeft="@dimen/_1sdp"
+            android:textColor="#04954c"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_1sdp"
+            />
+    </RelativeLayout>-->
+    <ImageView
+        android:id="@+id/monthly_subscribe_image1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginLeft="@dimen/_9sdp"
+        android:layout_marginRight="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:background="@drawable/group125"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/monthly_subscribtion_tool_bar"
+
+       />
+    <RelativeLayout
+        android:id="@+id/monthly_subscribe_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginLeft="@dimen/_9sdp"
+        android:layout_marginRight="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:alpha=".6"
+        android:background="#FF4B5157"
+        android:layout_below="@+id/monthly_subscribtion_tool_bar"
+
+        >
+
+        <TextView
+            android:id="@+id/monthly_subscribe_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="حقيبة القوة"
+            android:textColor="#fff"
+            android:textSize="@dimen/_22sdp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/monthly_subscribe_image2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginLeft="@dimen/_9sdp"
+        android:layout_marginRight="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:background="@drawable/group126"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/monthly_subscribe_image1"/>
+
+    <RelativeLayout
+        android:id="@+id/monthly_subscribe_relative2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginLeft="@dimen/_9sdp"
+        android:layout_marginRight="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:alpha=".6"
+        android:background="#FF4B5157"
+        android:layout_below="@+id/monthly_subscribe_image1">
+
+        <TextView
+            android:id="@+id/monthly_subscribe_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="حقيبه الرشاقة"
+            android:textColor="#fff"
+            android:textSize="@dimen/_22sdp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/monthly_subscribe_image3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginLeft="@dimen/_9sdp"
+        android:layout_marginRight="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:background="@drawable/group127"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/monthly_subscribe_image2"/>
+
+    <RelativeLayout
+        android:id="@+id/monthly_subscribe_relative3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginLeft="@dimen/_9sdp"
+        android:layout_marginRight="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:alpha=".6"
+        android:background="#FF4B5157"
+        android:layout_below="@+id/monthly_subscribe_image2">
+
+        <TextView
+            android:id="@+id/monthly_subscribe_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="وجبة الصحة والوقاية"
+            android:textColor="#fff"
+            android:textSize="@dimen/_22sdp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

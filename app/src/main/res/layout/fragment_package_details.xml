@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragment.PackageDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/package_details_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="#04954c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notifications_button"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/package_details_recycler_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_135sdp"
+        android:layout_below="@+id/package_details_tool_bar"
+        android:layout_marginBottom="@dimen/_5sdp">
+    </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/package_details_prod_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_details_recycler_banner"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_9sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#888888"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/package_details_prod_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_details_prod_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:textColor="#888888"
+            android:textSize="@dimen/_14sdp"/>
+        <View
+            android:id="@+id/package_details_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/package_details_prod_price"
+            android:background="#e1dfdf"
+            android:layout_marginTop="@dimen/_7sdp"/>
+        <TextView
+            android:id="@+id/package_details_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c8c8c8"
+            android:layout_below="@+id/package_details_view_line"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_9sdp"/>
+        <TextView
+            android:id="@+id/package_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التفاصيل"
+            android:layout_below="@+id/package_details_type"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_9sdp"/>
+        <TextView
+            android:id="@+id/package_details_prod_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c8c8c8"
+            android:layout_below="@+id/package_details"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            />
+        <Button
+            android:id="@+id/package_details_btn_subscribe"
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/button_login"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:text="اشتراك"
+            android:layout_below="@id/package_details_prod_details"
+            />
+    </RelativeLayout>
+</ScrollView>

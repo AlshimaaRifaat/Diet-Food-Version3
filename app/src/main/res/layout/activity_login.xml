@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/login_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:background="#04954c">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- <ImageView
+                     android:id="@+id/category_item_image_back"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/back_white"/>-->
+                <TextView
+                    android:id="@+id/login_text_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#fff"
+                    android:text="تسجيل الدخول"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/login_image"
+            android:layout_below="@+id/login_toolbar"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:background="@drawable/logo"
+            />
+        <!--<TextView
+            android:id="@+id/login_text_view_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="البريد الالكترونى"
+            android:textColor="#797b79"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:layout_below="@+id/login_image"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            />
+        <EditText
+            android:id="@+id/login_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/login_text_view_email"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:background="@drawable/edit_text_bottom_stroke"
+            android:paddingRight="@dimen/_10sdp"
+            android:drawableLeft="@drawable/union155"
+            android:textColor="#706e6f"
+            />
+-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_img_mail"
+            android:layout_below="@id/login_image"
+            android:layout_marginTop="@dimen/_47sdp"
+            >
+
+            <ImageView
+                android:id="@+id/mail_img"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/union155"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/login_text_email_input_layout"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/mail_img"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:hint="البريد الالكتروني"
+                >
+
+                <EditText
+                    android:id="@+id/login_edit_text_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:inputType="text"
+                    android:textColor="#706e6f"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/login_text_input_layout"
+    android:layout_below="@+id/login_img_mail"
+    android:layout_marginTop="@dimen/_10sdp"
+
+    >
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/path3762"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/pass_img"
+        android:layout_centerVertical="true"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_toRightOf="@id/pass_img"
+            android:hint="كلمة المرور"
+            >
+
+            <EditText
+                android:id="@+id/login_edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="#706e6f"
+                />
+        </android.support.design.widget.TextInputLayout>
+</RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_text_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/login_text_input_layout"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#04954c"
+            android:text="نسيت كلمه السر؟"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="normal"
+            android:layout_marginStart="@dimen/_10sdp"
+            />
+        <Button
+            android:id="@+id/login_btn_login"
+            android:layout_width="@dimen/_95sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/button_login"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:layout_below="@id/login_text_forgot_password"
+            android:text="تسجيل الدخول"
+            />
+        <RelativeLayout
+            android:id="@+id/login_relative_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_btn_login"
+            android:layout_marginTop="@dimen/_12sdp"
+            >
+
+
+            <TextView
+                android:id="@+id/login_text_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#04954c"
+                android:text="تسجيل"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/login_text_do_not_have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#04954c"
+                android:text="لا تملك حساب؟"
+                android:layout_toRightOf="@id/login_text_register"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/login_text_complete_as_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#04954c"
+            android:text="اكمل كزائر؟"
+            android:layout_below="@+id/login_relative_register"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_17sdp"
+
+            />
+    </RelativeLayout>
+
+</ScrollView>

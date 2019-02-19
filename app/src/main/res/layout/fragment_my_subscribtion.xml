@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/my_subscribtion_swip_refresh"
+    tools:context=".fragment.MySubscribtionFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_135sdp"
+        android:id="@+id/my_subscribtion_image"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/my_subscribtion_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_subscribtion_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_9sdp"/>
+    <RelativeLayout
+        android:id="@+id/relative_in_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_subscribtion_name"
+       android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_12sdp"
+        >
+    <TextView
+        android:id="@+id/my_subscribtion_in_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="فى الطريق"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:textColor="#667661"/>
+    <TextView
+        android:id="@+id/my_subscribtion_text_in_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_subscribtion_in_way"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:textColor="#667661"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_arrived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_subscribtion_name"
+       android:layout_centerHorizontal="true"
+
+
+        >
+        <TextView
+            android:id="@+id/my_subscribtion_arrived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="تم التوصيل"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:textColor="#667661"/>
+        <TextView
+            android:id="@+id/my_subscribtion_text_arrived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_subscribtion_arrived"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:textColor="#667661"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_subscribtion_name"
+       android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_12sdp"
+        >
+        <TextView
+            android:id="@+id/my_subscribtion_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="سعة الاشتراك"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:textColor="#667661"/>
+        <TextView
+            android:id="@+id/my_subscribtion_text_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_subscribtion_capacity"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginRight="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:textColor="#667661"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_subscribtion_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_in_way"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_margin="@dimen/_2sdp">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/my_subscribtion_cancel_subscribtion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الغاء الاشتراك فى الباقة؟"
+        android:layout_below="@+id/my_subscribtion_recycler"
+        android:layout_alignParentRight="true"
+        android:textColor="#667661"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_27sdp"/>
+
+</RelativeLayout>
+
+</ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>

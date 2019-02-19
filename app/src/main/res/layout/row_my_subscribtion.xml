@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/relative1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:layout_marginRight="@dimen/_40sdp"
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:id="@+id/row_my_subscribtion_status"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_33sdp"
+       android:layout_marginRight="@dimen/_45sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="#667661"/>
+    <RelativeLayout
+        android:id="@+id/relative_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/row_my_subscribtion_status"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_33sdp"
+
+        >
+        <TextView
+            android:id="@+id/row_my_subscribtion_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="تم التوصيل"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:textColor="#667661"/>
+        <TextView
+            android:id="@+id/row_my_subscribtion_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_my_subscribtion_day"
+            android:layout_centerHorizontal="true"
+            android:text="4"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:textColor="#667661"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+    <View
+        android:id="@+id/package_details_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/relative1"
+        android:background="#e1dfdf"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"/>
+</RelativeLayout>
