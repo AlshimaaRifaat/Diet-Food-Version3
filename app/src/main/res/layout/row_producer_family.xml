@@ -31,7 +31,7 @@
             android:layout_marginRight="@dimen/_3sdp"
             android:text="سلطه خضراء"
             android:textColor="#fff"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_11sdp"
             android:textStyle="bold" />
 
         <TextView
@@ -41,7 +41,7 @@
             android:layout_below="@+id/row_prod_family_title"
             android:layout_marginRight="@dimen/_3sdp"
             android:text="50 dollar"
-            android:textSize="@dimen/_12sdp"
+            android:textSize="@dimen/_11sdp"
             android:textColor="#fff"
             android:layout_alignParentRight="true"
            />
