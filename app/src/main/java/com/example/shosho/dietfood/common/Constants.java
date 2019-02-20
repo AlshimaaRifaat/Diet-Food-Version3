@@ -1,5 +1,7 @@
 package com.example.shosho.dietfood.common;
 
+import com.example.shosho.dietfood.fragment.PostOrderFragment;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -24,8 +26,8 @@ public class Constants {
         public static final String PAYMENT_BUTTON_BRAND = "VISA";
 
         /* The default amount and currency */
-        public static final String AMOUNT = "49";
-        public static final String CURRENCY = "SAR";
+        public static final String AMOUNT = PostOrderFragment.TotalPrice;
+        public static final String CURRENCY = "EUR";
 
 //        /* The card info for SDK & Your Own UI*/
 //        public static final String CARD_BRAND = "VISA";
@@ -38,7 +40,7 @@ public class Constants {
 
     public static final int CONNECTION_TIMEOUT = 5000;
 
-    public static final String BASE_URL = "http://dietfoodksa.com/site/public/api/";
+    public static final String BASE_URL = "http://dietfoodksa.com/site/public/api";
 
     public static final String LOG_TAG = "msdk.demo";
 }

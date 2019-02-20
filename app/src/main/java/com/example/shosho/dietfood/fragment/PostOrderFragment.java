@@ -91,7 +91,7 @@ public class PostOrderFragment extends Fragment implements PostOrderView
     GPSTracker gbs;
 
     Bundle bundle;
-    String TotalPrice;
+   public static String TotalPrice;
 
     public PostOrderFragment() {
         // Required empty public constructor

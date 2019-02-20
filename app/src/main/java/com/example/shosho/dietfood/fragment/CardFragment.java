@@ -190,7 +190,9 @@ public class CardFragment extends Fragment implements CardView ,AddToCardView
     private void goToPostOrderPage() {
         PostOrderFragment postOrderFragment=new PostOrderFragment();
         Bundle bundle=new Bundle();
-        bundle.putString( "totalPrice",TotalPrice);
+        double price=Double.parseDouble(TotalPrice);
+        int Price=(int)price;
+        bundle.putString( "totalPrice",String.valueOf(Price));
         postOrderFragment.setArguments(bundle);
         getFragmentManager().beginTransaction().add(R.id.card_frame_container,postOrderFragment)
                 .addToBackStack(null).commit();
